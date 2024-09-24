@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: ORDER-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/orders  # Added ':' after 'mysql'
+    username: sww2kor
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver  # Specify the MySQL driver class
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
